@@ -1,0 +1,54 @@
+* {
+    direction: rtl;
+}
+
+body {
+    height: 100%;
+    background: url(../assets/images/background.png);
+    font-family: 'Nachlieli CLM', serif;
+}
+
+
+
+#stripe {
+    height: 100px;
+}
+
+#exerciseContainer {
+    padding: 20px;
+    text-align: center;
+    max-width: 50%;
+    color: black;
+    font-size: 5rem;
+}
+
+
+
+
+.answer {
+    width: 30%;
+    background: oldlace;
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    transition: 0.5s;
+    height: 80px;
+    border-radius: 15px;
+    line-height: 80px;
+    transition: all 1s;
+    display: table;
+}
+
+.answer img {
+    max-width: 10%;
+    height: auto;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#answersContainer {
+    display: block;
+    max-width: 90%;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;800&display=swap" rel="stylesheet">
+    <link href='http://serve.fontsproject.com/css?family=Nachlieli+CLM:200,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../overallStyle.css">
+    <link rel="stylesheet" href="highlow.css">
+    <title>קטן גדול שווה</title>
+</head>
+
+<body>
+    <div class="container text-center py-3 px-4 " id="overallContainer">
+        <h1 class="bg-info rounded-pill display-4 display-md-1">קטן, גדול או שווה?</h1>
+        <div class="container d-flex rounded buttonsContainer py-2">
+            <div id="stripe" class="menuBar row justify-content-around">
+                <button class="rounded-pill col-3 help">אפשר עזרה?</button>
+                <span id="message" class="col-4">Correct!</span>
+                <button class="rounded-pill col-3 reset">עוד פעם</button>
+            </div>
+        </div>
+        <div class="container bg-primary my-3 rounded-pill">
+            <div class="row d-flex justify-content-around py-2 text-center align-items-center ltrContainer">
+                <div class="col-2 operand  rounded bg-secondary text-light display-1" id="operand1">8</div>
+                <div class="col-2 bg-secondary rounded px-2 py-4 py-md-5" id="answerDrop"> </div>
+                <div class="col-2 operand rounded bg-secondary text-light display-1" id="operand2">5</div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row d-flex justify-content-around py-2 bg-light text-center rounded-pill ltrContainer display-6 display-md-1">
+                <div class="col-2 draggable" id="&lt;" draggable="true"><i class="fas fa-5x fa-less-than"></i></div>
+                <div class="col-2 draggable" id="=" draggable="true"><i class="fas fa-5x fa-equals"></i></div>
+                <div class="col-2 draggable" id="&gt;" draggable="true"><i class="fas fa-5x fa-greater-than"></i></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <span  class="bg-warning rounded-pill p-auto m-auto"><i class="fas fa-volume-mute fa-2x m-auto"></i></span>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js" integrity="sha512-ALoawPS0JxHQ+8dGL7htZIlVNRaE/SN9gHD4G8pJJTi9H4BQ/3PjdvhggSGR34g00mvTPFkxQuveQUsJA5664Q==" crossorigin="anonymous"></script>
+    <script src="highlow.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link href='http://serve.fontsproject.com/css?family=Nachlieli+CLM:200,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../overallStyle.css">
+    <link rel="stylesheet" href="addition.css">
+    <title>חיבור עד 10</title>
+</head>
+
+<body>
+    <div class="container text-center" id="overallContainer">
+        <div class="container" id="exerciseContainer">
+            <div class="row flex-column rounded-pill bg-info">
+                <h2 class="display-4">כמה זה</h2>
+                <h1 class="display-3"><span id="operand1">5</span> + <span id="operand2">3</span></h1>
+            </div>
+        </div>
+        <div class="container d-flex rounded buttonsContainer">
+            <div id="stripe" class="menuBar row justify-content-around py-2">
+                <button class="rounded-pill col-3 help">אפשר עזרה?</button>
+                <span id="message" class="col-3">Correct!</span>
+                <button class="rounded-pill col-3 reset">עוד פעם</button>
+            </div>
+        </div>
+        <div class="gameBody">
+            <div class="container" id="answersContainer">
+                <div class="row justify-content-around my-2">
+                    <div class="answer col-md-3 col-12 my-2">8</div>
+                    <div class="answer col-md-3 col-12 my-2">7</div>
+                </div>
+                <div class="row justify-content-around  my-2">
+                    <div class="answer col-md-3 col-12 my-2">6</div>
+                    <div class="answer col-md-3 col-12 my-2">9</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex rounded buttonsContainer">
+            <div id="difficulty" class="row  menuBar justify-content-around py-2">
+                <button class="rounded-pill col-3 mode selected" data-max-answer="10">קל</button>
+                <button class="rounded-pill col-3 mode" data-max-answer="20">בינוני</button>
+                <button class="rounded-pill col-3 mode" data-max-answer="50">קשה</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js" integrity="sha512-ALoawPS0JxHQ+8dGL7htZIlVNRaE/SN9gHD4G8pJJTi9H4BQ/3PjdvhggSGR34g00mvTPFkxQuveQUsJA5664Q==" crossorigin="anonymous"></script>
+    <script src="addition.js"></script>
+</body>
+
+</html>

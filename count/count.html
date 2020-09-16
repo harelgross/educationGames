@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link href='http://serve.fontsproject.com/css?family=Nachlieli+CLM:200,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="../overallStyle.css">
+    <link rel="stylesheet" href="count.css">
+    <title>מנייה</title>
+</head>
+
+<body>
+    <div class="container text-center" id="overallContainer">
+        <div class="container" id="exerciseContainer">
+            <div class="row flex-column rounded-pill bg-info">
+                <h2 class="display-4">כמה זה</h2>
+                <h1 class="display-3"><span id="operand">5</span></h1>
+            </div>
+        </div>
+        <div class="container d-flex rounded buttonsContainer">
+            <div id="stripe" class="menuBar row justify-content-around py-2">
+                <button class="rounded-pill col-3 help" data-toggle="tooltip" data-placement="bottom" title="אפשר עזרה?">
+                    <i class="far fa-life-ring fa-3x"></i>
+                </button>
+
+                <span id="message" class="col-3">Correct!</span>
+
+                <button class="rounded-pill col-3 reset" data-toggle="tooltip" data-placement="bottom" title="תרגיל אחר?">
+                    <i class="fas fa-sync fa-2x"></i>
+                </button>
+            </div>
+        </div>
+        <div class="gameBody">
+            <div class="container" id="answersContainer">
+                <div class="row justify-content-around my-2">
+                    <div class="answer col-md-4 col-12 my-2" data-answer = "8">8</div>
+                    <div class="answer col-md-4 col-12 my-2" data-answer = "8">7</div>
+                </div>
+                <div class="row justify-content-around  my-2">
+                    <div class="answer col-md-4 col-12 my-2" data-answer= "8">6</div>
+                    <div class="answer col-md-4 col-12 my-2" data-answer= "8">9</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex rounded buttonsContainer">
+            <div id="difficulty" class="row  menuBar justify-content-around py-2">
+                <button class="difficulty rounded-pill col-3 mode selected" data-toggle="tooltip" data-placement="bottom" title="עד 5" data-max-answer="5"><i class="fas fa-weight-hanging"></i></button>
+                <button class="difficulty rounded-pill col-3 mode" data-toggle="tooltip" data-placement="bottom" title="עד 10" data-max-answer="10"><i class="fas fa-weight-hanging"></i><i class="fas fa-weight-hanging"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.0/howler.min.js" integrity="sha512-ALoawPS0JxHQ+8dGL7htZIlVNRaE/SN9gHD4G8pJJTi9H4BQ/3PjdvhggSGR34g00mvTPFkxQuveQUsJA5664Q==" crossorigin="anonymous"></script>
+    <script src="count.js"></script>
+</body>
+
+</html>
