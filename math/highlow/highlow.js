@@ -41,11 +41,14 @@ function init() {
 
 function initSounds() {
     sounds.correct = new Howl({
-        src: ['assets/sounds/correct.mp3']
+        src: ['../../assets/sounds/correct.mp3']
       });
     sounds.wrong = new Howl({
-        src: ['assets/sounds/wrong.mp3']
+        src: ['../../assets/sounds/wrong.mp3']
       });  
+    sounds.help = new Howl({
+        src: ['../../assets/sounds/help.mp3']
+    });
 };
 
 function setEventListeners() {
@@ -128,6 +131,7 @@ function help() {
     if (draggables[answerToRemove].id !== correctAnswer) {
         draggables[answerToRemove].style.visibility = "hidden";
         draggables[answerToRemove].classList.add("hidden");
+        sounds.help.play();
 
     }
     else {

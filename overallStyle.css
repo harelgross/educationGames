@@ -18,7 +18,8 @@ body {
     height: 60px;
 }
 
-.menuBar button {
+.menuBar button,
+.menuBar a {
     background: steelblue;
     color: #f7f1e3;
     border: none;
@@ -28,7 +29,11 @@ body {
     outline: none;
 }
 
-.menuBar button:hover {
+.menuBar a {
+    text-decoration: none;
+}
+.menuBar button:hover,
+.menuBar a:hover {
     color: steelblue;
     background-color: #f7f1e3;
 }

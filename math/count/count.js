@@ -60,13 +60,13 @@ function setEventListeners() {
 
 function initSounds() {
     sounds.correct = new Howl({
-        src: ['../assets/sounds/correct.mp3']
+        src: ['../../assets/sounds/correct.mp3']
       });
     sounds.wrong = new Howl({
-        src: ['../assets/sounds/wrong.mp3']
+        src: ['../../assets/sounds/wrong.mp3']
       });  
     sounds.help = new Howl({
-        src: ['../assets/sounds/help.mp3']
+        src: ['../../assets/sounds/help.mp3']
       });  
 };
 
@@ -91,7 +91,7 @@ function updateAnswerBoxes() {
         answerBoxes[i].innerHTML = "";
         $(answerBoxes[i]).data("answer", answers[i]);
         for (let j = 0; j < answers[i]; j++) {
-            let image = `<img src="../assets/images/countItems/${item}.png">`;
+            let image = `<img src="../../assets/images/countItems/${item}.png">`;
             answerBoxes[i].insertAdjacentHTML('beforeend', image);
         }
         answerBoxes[i].style.display = "block";
